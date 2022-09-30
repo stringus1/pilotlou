@@ -1,0 +1,18 @@
+{
+  "include": ["*"],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES6",
+    "outDir": "dist",
+    "sourceMap": true,
+    "allowJs": false,
+  },
+  "watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority",
+    "synchronousWatchDirectory": true,
+    "excludeDirectories": ["**/node_modules", "_build"],
+    "excludeFiles": ["build/fileWhichChangesOften.ts"]
+  }
+}
